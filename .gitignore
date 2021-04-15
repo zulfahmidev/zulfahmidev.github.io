@@ -1,1 +1,5 @@
 assets/vendor
+assets/styles/index.scss
+assets/styles/index.css.map
+assets/styles/index.css
+assets/scripts/index.js
