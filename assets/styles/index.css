@@ -266,7 +266,8 @@ body, html {
 }
 
 #header .inner-header h1 {
-  font-size: 8em;
+  font-size: 5em;
+  margin: .2rem 0;
   font-family: Poppins-Regular;
 }
 
