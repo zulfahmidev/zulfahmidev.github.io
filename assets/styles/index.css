@@ -382,6 +382,7 @@ body, html {
   height: -moz-fit-content;
   height: fit-content;
   background-image: url("../images/725868.jpg");
+  background-color: #000000;
   background-size: cover;
   background-position: center center;
 }
@@ -642,7 +643,7 @@ body, html {
 
 #contact {
   position: relative;
-  background-image: url(../images/pohons.jpg);
+  background-color: #000000;
   background-size: cover;
   background-position: center center;
   color: #fff;
