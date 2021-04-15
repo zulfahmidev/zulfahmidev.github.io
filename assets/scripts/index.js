@@ -80,18 +80,9 @@ $(document).ready(() => {
     //     console.log('a');
     // })
 
-})
-
-navigator.geolocation.getCurrentPosition((pos) => {
-    let lat = pos.coords.latitude;
-    let long = pos.coords.longitude;
     let demo = `
-        <iframe width="${window.innerWidth-17}" height="${$('#contact').height()}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=5.1142567,97.0841893&hl=es&t=k&z=18&amp;output=embed"></iframe>
-    
-    `;
+            <iframe width="${window.innerWidth-17}" height="${$('#contact').height()}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=5.1142567,97.0841893&hl=es&t=k&z=18&amp;output=embed"></iframe>
+        
+        `;
     document.querySelector("#contact .map").innerHTML = demo;
-}, (err) => {
-    
-}, {
-    enableHighAccuracy: true,
 })
