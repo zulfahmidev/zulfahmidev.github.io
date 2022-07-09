@@ -558,14 +558,14 @@ body, html {
 }
 
 #portfolio .container .items .item .text .name {
-  font-size: 40px;
+  font-size: 28px;
   font-family: Poppins;
 }
 
 #portfolio .container .items .item .text .desc {
   margin-top: .5rem;
   text-align: justify;
-  width: 80%;
+  /* width: 80%; */
   opacity: .75;
 }
 
