@@ -13,7 +13,7 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/zulfahmidev">
                 <Icon name="fa6-brands:github" />
             </a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zul-fahmi-94244318b/">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zulfahmidev/">
                 <Icon name="fa6-brands:linkedin" />
             </a></li>
         </ul>
