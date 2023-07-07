@@ -22,7 +22,7 @@
                         <Icon name="fa6-solid:envelope" />
                     </div>
                     <div class="name">Email Bisnis</div>
-                    <p class="desc">zulfahmi.bussiness@gmail.com</p>
+                    <p class="desc">bussiness.zulfahmi@gmail.com</p>
                 </div>
                 <div class="item">
                     <div class="icon">
