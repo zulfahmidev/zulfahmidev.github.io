@@ -4,6 +4,22 @@
   </div>
 </template>
 
+<script>
+useSeoMeta({
+  title: 'Zulfahmidev',
+  ogTitle: 'Zulfahmidev',
+  description: 'Hai, saya Zulfahmi, seorang pengembang yang berfokus pada pengembangan Web dan Aplikasi Selular yang berpengalaman selama empat tahun. Sudah tersertifikasi nasional oleh Lembaga Sertifikasi Profesi Komputer dalam bidang Programming and Software Development pada tahun 2020. Kepuasan pelanggan adalah prioritas saya, dan perlu di ingat, bahwa aplikasi dari saya sepenuhnya dibuat dengan sepenuh hati dan tidak asal jadi.',
+  ogDescription: 'Hai, saya Zulfahmi, seorang pengembang yang berfokus pada pengembangan Web dan Aplikasi Selular yang berpengalaman selama empat tahun. Sudah tersertifikasi nasional oleh Lembaga Sertifikasi Profesi Komputer dalam bidang Programming and Software Development pada tahun 2020. Kepuasan pelanggan adalah prioritas saya, dan perlu di ingat, bahwa aplikasi dari saya sepenuhnya dibuat dengan sepenuh hati dan tidak asal jadi.',
+  ogImage: '/images/icon.png',
+  applicationName: 'Zulfahmidev',
+  creator: 'Zulfahmi',
+  author: 'Zulfahmi',
+  keywords: 'zulfahmi, zulfahmidev, indonesia, aceh, lhokseumawe, mobile, web, website, mobile app, android, ios, react native, flutter, swift, web developer, web enginer, software enginering, pengembang web, mobile enginering, mobile developer, pengembang aplikasi mobile, pengembang, perangkat lunak, professional, wordskill, lomba kopetensi siswa, sertifikasi nasional, lembaga sertifikasi profesi komputer, komputer, computer, programming, programmer, bangkit, acedmy'
+  
+  
+})
+</script>
+
 <style>
 @font-face {
   font-family: Poppins-Regular;
