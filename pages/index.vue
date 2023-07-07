@@ -19,7 +19,8 @@ export default {
   data() {
     return {
       lastScroll: 0,
-      showSidebar: false
+      showSidebar: false,
+      scroll: 0,
     }
   },
   methods: {
@@ -41,17 +42,17 @@ export default {
     },
     checkScroll() {
       let navbar = document.querySelector("#navbar");
-      let scroll = window.scrollY;
+      this.scroll = window.scrollY;
       if (!this.showSidebar) {
           
-          if (this.lastScroll > scroll) {
+          if (this.lastScroll > this.scroll) {
               if (!navbar.classList.contains('show')) {
                   navbar.classList.add('show');
               }
           }else {
               navbar.classList.remove('show');
           }
-          this.lastScroll = scroll;
+          this.lastScroll = this.scroll;
           if (window.scrollY > 0) {
               navbar.classList.add('scroll');
           }else {
@@ -60,9 +61,11 @@ export default {
       }
 
       let sections = ["header", "about", "services", "portfolio", "contact"];
-
+      
       sections.forEach((s,i) => {
+        
           if (this.check(s)) {
+            // console.log(s)
               if (i>0) {
                   document.querySelectorAll(`#navbar .navs li`)[i-1].classList.remove('active');
               }
@@ -75,7 +78,7 @@ export default {
     },
     check(id) {
       let a = document.querySelector(`#${id}`).offsetTop;
-      return scroll + 48 >= a;
+      return this.scroll + 48 >= a;
     }
   },
   mounted() {
@@ -87,7 +90,9 @@ export default {
         fl.style.display = "none";
     }, 300)
     
-    document.onscroll = this.checkScroll;
+    document.onscroll = () => {
+      this.checkScroll()
+    };
 
     document.querySelector('.navs li').onclick = this.toggleSidebar();
     document.querySelector('.sidebarToggle').onclick = this.toggleSidebar();
