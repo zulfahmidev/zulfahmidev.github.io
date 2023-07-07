@@ -1,10 +1,17 @@
+<template>
+  <div>
+    <NuxtPage />
+  </div>
+</template>
+
+<style>
 @font-face {
   font-family: Poppins-Regular;
   src: url("../fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: Quicksand-Regular;
+  font-family: Poppins-Regular;
   src: url("../fonts/Quicksand-Regular.ttf");
 }
 
@@ -15,12 +22,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
-  font-family: Quicksand-Regular;
+  font-family: Poppins-Regular;
 }
 
 body, html {
   scroll-behavior: smooth;
-  font-family: Quicksand-Regular;
+  font-family: Poppins-Regular;
 }
 
 .container {
@@ -37,7 +44,7 @@ body, html {
   width: -moz-fit-content;
   width: fit-content;
   color: #000;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   cursor: pointer;
 }
 
@@ -416,7 +423,7 @@ body, html {
 #services .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   margin: 1rem 0;
 }
 
@@ -505,7 +512,7 @@ body, html {
   font-weight: bold;
   margin: 1rem 0;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
 }
 
 #portfolio .container .subtitle {
@@ -533,8 +540,6 @@ body, html {
 
 #portfolio .container .items .item .image {
   height: 400px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: img;
   width: 100%;
   background-color: rgba(187, 141, 49, 0.2);
@@ -552,14 +557,12 @@ body, html {
 }
 
 #portfolio .container .items .item .text {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: info;
 }
 
 #portfolio .container .items .item .text .name {
   font-size: 28px;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
 }
 
 #portfolio .container .items .item .text .desc {
@@ -594,7 +597,7 @@ body, html {
 #order .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
 }
 
 #order .container .subtitle {
@@ -605,14 +608,9 @@ body, html {
 #order .container .steps {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-top: 5rem;
 }
@@ -690,7 +688,7 @@ body, html {
 #contact .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
 }
 
 #contact .container .subtitle {
@@ -737,7 +735,7 @@ body, html {
 
 #contact .container .items .item .name {
   margin-top: 1rem;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   font-weight: bold;
 }
 
@@ -926,3 +924,4 @@ body, html {
   }
 }
 /*# sourceMappingURL=index.css.map */
+</style>

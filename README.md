@@ -1,2 +1,63 @@
-# zulfahmidev.github.io
-Hai, saya Zulfahmi, seorang pengembang yang berfokus pada pengembangan Web dan Aplikasi Selular yang berpengalaman selama empat tahun. Sudah tersertifikasi nasional oleh Lembaga Sertifikasi Profesi Komputer dalam bidang Programming and Software Development pada tahun 2020. Kepuasan pelanggan adalah prioritas saya, dan perlu di ingat, bahwa aplikasi dari saya sepenuhnya dibuat dengan sepenuh hati dan tidak asal jadi.
+# Nuxt 3 Minimal Starter
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
