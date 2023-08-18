@@ -1,5 +1,5 @@
 <template>
-  <div id="header" style="background-image: url('/images/pexels-photo-39811.jpeg');">
+  <div id="header" style="background-image: url('/images/image4.jpg');">
     <div class="filter"></div>
     <div class="inner-header">
         <h4 class="wow fadeInUp" data-wow-duration="1s">MOBILE DAN WEB DEVELOPER</h4>

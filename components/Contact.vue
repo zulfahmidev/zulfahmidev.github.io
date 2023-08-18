@@ -33,10 +33,10 @@
                 </div>
                 <div class="item">
                     <div class="icon">
-                        <Icon name="fa6-solid:globe" />
+                        <Icon name="fa6-brands:linkedin" />
                     </div>
-                    <div class="name">Sosial Media</div>
-                    <p class="desc">Akun sosial media saya lainnya.</p>
+                    <div class="name">Linkedin</div>
+                    <p class="desc">zulfahmidev</p>
                 </div>
             </div>
         </div>
