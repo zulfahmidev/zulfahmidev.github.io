@@ -15,12 +15,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
-  font-family: Quicksand-Regular !important;
+  font-family: Poppins-Regular;
 }
 
 body, html {
   scroll-behavior: smooth;
-  font-family: Quicksand-Regular !important;
+  font-family: Poppins-Regular;
 }
 
 .container {
@@ -37,7 +37,7 @@ body, html {
   width: -moz-fit-content;
   width: fit-content;
   color: #000;
-  font-family: Poppins;
+  
   cursor: pointer;
 }
 
@@ -168,12 +168,8 @@ body, html {
   -webkit-transition: .05s;
   transition: .05s;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 
@@ -419,7 +415,7 @@ body, html {
 #services .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  
   margin: 1rem 0;
 }
 
@@ -508,7 +504,7 @@ body, html {
   font-weight: bold;
   margin: 1rem 0;
   text-align: center;
-  font-family: Poppins;
+  
 }
 
 #portfolio .container .subtitle {
@@ -573,7 +569,7 @@ body, html {
 
 #portfolio .container .items .item .text .name {
   font-size: 28px;
-  font-family: Poppins;
+  
   font-weight: bold;
 }
 
@@ -614,7 +610,7 @@ body, html {
 #order .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  
 }
 
 #order .container .subtitle {
@@ -710,7 +706,7 @@ body, html {
 #contact .container .title {
   font-size: 32px;
   font-weight: bold;
-  font-family: Poppins;
+  
 }
 
 #contact .container .subtitle {
@@ -757,7 +753,7 @@ body, html {
 
 #contact .container .items .item .name {
   margin-top: 1rem;
-  font-family: Poppins;
+  
   font-weight: bold;
 }
 
@@ -812,8 +808,6 @@ body, html {
     z-index: 100;
   }
   #navbar .container .sidebarToggle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #navbar .container .navs {
@@ -858,7 +852,7 @@ body, html {
     font-size: 14px;
   }
   #about .container p {
-    width: 100%;
+    width: 90%;
   }
   #about .hiasan {
     width: 80%;

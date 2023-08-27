@@ -1,7 +1,7 @@
 <template>
   <div>
     <FlashLayout/>
-    <Navbar/>
+    <Navbar @toggle="setShowSidebar(!showSidebar)" @hidesidebar="setShowSidebar(false)" />
     <Header/>
     <About/>
     <Services/>
@@ -27,16 +27,15 @@ export default {
     select(selector) {
       return document.querySelector(selector)
     },
-    toggleSidebar() {
+    setShowSidebar(isShow) {
+      console.log(isShow)
+      this.showSidebar = isShow
+      let navbar = document.querySelector("#navbar");
       if (window.innerWidth < 800) {
-          if (this.showSidebar) {
-              navbar.classList.remove('showSidebar');
-              this.select('.sidebarToggle').innerHTML = "<i class='fa fa-bars'></i>"
-              this.showSidebar = false;
+          if (isShow) {
+            navbar.classList.add('showSidebar');
           }else {
-              navbar.classList.add('showSidebar');
-              this.select('.sidebarToggle').innerHTML = "<i class='fa fa-times'></i>"
-              this.showSidebar = true;
+            navbar.classList.remove('showSidebar');
           }
       }
     },
@@ -94,8 +93,8 @@ export default {
       this.checkScroll()
     };
 
-    document.querySelector('.navs li').onclick = this.toggleSidebar();
-    document.querySelector('.sidebarToggle').onclick = this.toggleSidebar();
+    // document.querySelector('.navs li').onclick = this.toggleSidebar();
+    // document.querySelector('.sidebarToggle').onclick = this.toggleSidebar();
     let demo = `
             <iframe width="${window.innerWidth-17}" height="${this.select('#contact').offsetHeight}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=5.1142567,97.0841893&hl=es&t=k&z=18&amp;output=embed"></iframe>
         
