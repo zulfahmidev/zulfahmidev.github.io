@@ -524,8 +524,10 @@ body, html {
 #portfolio .container .items .item {
   display: -ms-grid;
   display: grid;
+  height: fit-content;
+  width: fit-content;
   margin: 3rem 0;
-  -ms-grid-columns: auto 1fr;
+  -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'img info';
   gap: 2rem;
@@ -535,12 +537,13 @@ body, html {
 }
 
 #portfolio .container .items .item .image {
-  height: 400px;
+  /* height: 400px; */
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img;
-  width: fit-content;
-  max-width: 90%;
+  width: 90%;
+
+  /* max-width: 90%; */
   background-color: rgba(187, 141, 49, 0.2);
   /* border: black; */
   outline-style: solid;
@@ -557,7 +560,7 @@ body, html {
 
 #portfolio .container .items .item .image img{
   width: 100%;
-  height: 100%;
+  border-radius: 8px;
   object-fit: scale-down;
   /* object-position: top center; */
 }
@@ -867,20 +870,25 @@ body, html {
   #about::after {
     display: none;
   }
-  #services .container .items {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
   #portfolio .container .items .item {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'img' 'info';
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    gap: 0;
+    margin-bottom: 2rem;
+    display: block;
   }
-  #portfolio .container .items .item:nth-child(even) {
-        grid-template-areas: 'img' 'info';
+  #portfolio .container .items .item .image {
+    width: 100%;
+  }
+  #portfolio .container .items .item .text {
+    padding-top: 1rem;
+  }
+  #portfolio .container .items .item .text .name {
+    font-size: 18px;
+  }
+  #portfolio .container .items .item .text .desc {
+    font-size: 13px;
+  }
+  #portfolio .container .items .item .text .date {
+    font-size: 13px;
+    margin-top: .5rem;
   }
   #contact .container {
     -ms-grid-columns: 1fr;
@@ -904,9 +912,9 @@ body, html {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  #portfolio .container .items .item .image {
+  /* #portfolio .container .items .item .image {
     height: 200px;
-  }
+  } */
   #order .container .steps {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
