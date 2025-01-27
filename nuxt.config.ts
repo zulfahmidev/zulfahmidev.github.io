@@ -26,7 +26,15 @@ export default defineNuxtConfig({
         },
         {
           name: 'title', content: 'Zulfahmidev'
-        }
+        },
+        { name: 'google-adsense-account', content: 'ca-pub-9634380513791071' }
+      ],
+      script: [
+        {
+          async: true,
+          src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9634380513791071",
+          crossorigin: "anonymous",
+        },
       ]
     }
   }
