@@ -43,7 +43,7 @@ export default function Navbar() {
                         alt="logo black zulfahmidev"
                         fill />
                 </div>
-                <nav className="hidden lg:block">
+                <nav className="">
                     <ul className="flex items-center gap-6">
                         {/* <li>
                             <a className="opacity-50 hover:opacity-100" href="">Home</a>
