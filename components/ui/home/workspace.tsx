@@ -143,7 +143,6 @@ export default function Workspace() {
                                         v.stack.map((stack, i) => {
                                             if (stackIcons[stack]) {
                                                 const Icon = stackIcons[stack].icon
-                                                console.log(stackIcons[stack].color)
                                                 return (
                                                     <Icon key={i} className={`text-xl text-black/50`} />
                                                 )

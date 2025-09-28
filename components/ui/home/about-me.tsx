@@ -1,5 +1,4 @@
 import { FaArrowRight } from "react-icons/fa";
-import TechStack from "./tech-stack";
 import { TextAnimate } from "../text-animate";
 
 export default function AboutMe() {

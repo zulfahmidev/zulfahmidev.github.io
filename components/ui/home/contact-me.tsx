@@ -3,7 +3,7 @@ import { AnimatedShinyText } from "../animated-shiny-text";
 import { ShineBorder } from "../shine-border";
 import { BorderBeam } from "../border-beam";
 import { LightRays } from "../light-rays";
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function ContactMe() {
     return (
@@ -12,7 +12,7 @@ export default function ContactMe() {
                 <div className="col-span-1 p-5 lg:p-0">
                     <h2 className="text-primary text-xl">Connect With Me</h2>
                     <h3 className="text-5xl font-bold my-2">
-                        <AnimatedShinyText>Let's start a collaborate together</AnimatedShinyText>
+                        <AnimatedShinyText>{"Let's start a collaborate together"}</AnimatedShinyText>
                     </h3>
                     <div className="mt-6 p-12 border rounded-xl relative">
                         <LightRays />

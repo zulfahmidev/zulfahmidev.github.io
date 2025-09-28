@@ -46,17 +46,7 @@ const reviews = [
 const firstRow = reviews.slice(0, reviews.length / 2)
 const secondRow = reviews.slice(reviews.length / 2)
 
-const TemplateCard = ({
-  img,
-  name,
-  username,
-  body,
-}: {
-  img: string
-  name: string
-  username: string
-  body: string
-}) => {
+const TemplateCard = () => {
   return (
     <figure
       className={cn(

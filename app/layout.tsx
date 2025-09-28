@@ -1,26 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, SUSE } from "next/font/google";
+import { SUSE } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import { Header } from "@/components/ui/home/header";
-import AboutMe from "@/components/ui/home/about-me";
-import Workspace from "@/components/ui/home/workspace";
-import Blog from "@/components/ui/home/blog";
 import Footer from "@/components/ui/home/footer";
-import { Apps } from "@/components/ui/home/apps";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import { Templates } from "@/components/ui/home/templates";
-import ContactMe from "@/components/ui/home/contact-me";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import { Suspense } from "react";
 
 const suseMono = SUSE({
   variable: "--font-suse-mono",
@@ -48,16 +33,12 @@ export default function RootLayout({
         <Navbar />
         <Header />
         <main>
-          <AboutMe />
-          <Workspace />
-          {/* <Apps />
-          <Blog />
-          <Templates /> */}
-          <ContactMe />
+          <Suspense fallback={<>Loading...</>}>
+            {children}
+          </Suspense>
         </main>
         <ProgressiveBlur height="6rem" position="bottom" />
         <Footer />
-        {/* {children} */}
       </body>
     </html>
   );
