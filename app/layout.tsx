@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import { Header } from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+// import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next"
 
