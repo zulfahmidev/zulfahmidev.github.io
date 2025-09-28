@@ -15,8 +15,86 @@ const suseMono = SUSE({
 });
 
 export const metadata: Metadata = {
-  title: "Zulfahmidev - Software Engineer",
-  description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces",
+  title: {
+    default: "Zulfahmidev - Software Engineer",
+    template: "%s | Zulfahmidev",
+  },
+  description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces.",
+  keywords: [
+    "Backend Developer", "Golang", "Python", "PHP", "Portfolio", "Backend Engineer", "Frontend Developer", "Frontend Engineer", "Fullstack Developer", "Fullstack Engineer", "Software Developer", "Software Engineer", "Java", "JavaScript", "Flask", "MongoDB", "MySql", "PostgreSql", "Firebase", "Laravel", "Gin", "Fiber", "Next.js", "Nuxt.js", "Vue.js", "React.js", "Node.js", "Express.js", "Nest.js", "Fastify.js", "CodeIgniter", "Django", "Java Spring Boot", "APIs", "Website", "Application", "Design", "UI/UX", "Vocaject", "Arahku", "UKM POLICY", "Kopi Pas", "Google Cloud Platform", "Tensorflow", "Super Pasar Rakyat Indonesia", "Sekawan Media Informatika"
+  ],
+  authors: [{ name: "Zulfahmi", url: "https://zulfahmidev.com" }],
+  creator: "Zulfahmi",
+  publisher: "Zulfahmidev",
+
+  // Metadata standar web
+  metadataBase: new URL("https://zulfahmidev.com"),
+  alternates: {
+    canonical: "https://zulfahmidev.com",
+    languages: {
+      "id-ID": "https://zulfahmidev.com/id",
+      "en-US": "https://zulfahmidev.com/en",
+    },
+  },
+
+  // Open Graph (Facebook, LinkedIn, dll.)
+  openGraph: {
+    type: "website",
+    url: "https://zulfahmidev.com",
+    title: "Zulfahmidev - Software Engineer",
+    description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces.",
+    siteName: "Zulfahmidev",
+    images: [
+      {
+        url: "https://zulfahmidev.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Zulfahmidev - Software Engineer",
+      },
+    ],
+    locale: "id_ID",
+  },
+
+  // Twitter Cards
+  twitter: {
+    card: "summary_large_image",
+    title: "Zulfahmidev - Software Engineer",
+    description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces.",
+    site: "@zulfahmidev",
+    creator: "@zulfahmidev",
+    images: ["https://zulfahmidev.com/og-image.png"],
+  },
+
+  // Icons (favicon, apple-touch-icon, dll.)
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+
+  // Theme
+  themeColor: "#ffffff",
+  colorScheme: "light dark",
+
+  // Robots (SEO directives)
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  // App metadata (PWA / manifest)
+  applicationName: "Zulfahmidev",
+  category: "Portfolio",
+  generator: "Next.js 14",
 };
 
 export default function RootLayout({
