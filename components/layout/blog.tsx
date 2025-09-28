@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AnimatedShinyText } from "../animated-shiny-text";
+import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Blog() {

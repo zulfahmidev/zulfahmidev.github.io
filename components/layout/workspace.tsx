@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AnimatedShinyText } from "../animated-shiny-text";
+import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { FaArrowRight, FaLaravel } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -109,10 +109,10 @@ export default function Workspace() {
             <div className="container mx-auto px-5 lg:px-0">
                 <div className="lg:flex justify-between items-center">
                     <div className="">
-                        <h2 className="text-primary text-xl">Workspace</h2>
-                        <h3 className="text-5xl font-bold my-2">
+                        <h2 className="text-primary text-xl">Portfolio</h2>
+                        <div className="text-5xl font-bold my-2">
                             <AnimatedShinyText>Selected Project</AnimatedShinyText>
-                        </h3>
+                        </div>
                         <p className="opacity-50">Here are some of my best projects and achievements.</p>
                     </div>
                     <a href="" className="my-3 py-2 px-4 w-fit border-2 border-foreground rounded-full flex items-center gap-3 font-semibold">
@@ -136,7 +136,7 @@ export default function Workspace() {
                                 <div className="opacity-50 flex items-center gap-3 mt-1">
                                     <p>{v.position}</p>
                                     <div className="w-1 h-1 rounded-full bg-foreground"></div>
-                                    <span>{v.estimate}</span>
+                                    <p>{v.estimate}</p>
                                 </div>
                                 <div className="flex gap-3 items-center mt-2">
                                     {

@@ -1,6 +1,6 @@
-import AboutMe from "@/components/ui/home/about-me";
-import ContactMe from "@/components/ui/home/contact-me";
-import Workspace from "@/components/ui/home/workspace";
+import AboutMe from "@/components/layout/about-me";
+import ContactMe from "@/components/layout/contact-me";
+import Workspace from "@/components/layout/workspace";
 
 export default function Home() {
   return (

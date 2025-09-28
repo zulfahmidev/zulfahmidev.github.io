@@ -1,6 +1,6 @@
 'use client'
 
-import { AnimatedThemeToggler } from "./animated-theme-toggler";
+import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";

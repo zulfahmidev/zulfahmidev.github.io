@@ -1,5 +1,5 @@
 import { FaLaravel } from "react-icons/fa";
-import { ScrollVelocityContainer, ScrollVelocityRow } from "../scroll-based-velocity";
+import { ScrollVelocityContainer, ScrollVelocityRow } from "../ui/scroll-based-velocity";
 
 export default function TechStack() {
     return (

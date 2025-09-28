@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
-import { Marquee } from "../marquee"
-import { AnimatedShinyText } from "../animated-shiny-text"
+import { Marquee } from "../ui/marquee"
+import { AnimatedShinyText } from "../ui/animated-shiny-text"
 import { FaArrowRight } from "react-icons/fa"
 import Image from "next/image"
 
