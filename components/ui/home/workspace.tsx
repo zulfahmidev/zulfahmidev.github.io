@@ -6,6 +6,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaFlutter } from "react-icons/fa6";
 import { SiFlask, SiGooglecloud, SiKotlin, SiMysql, SiNuxtdotjs, SiPostgresql, SiPusher, SiTensorflow, SiVuedotjs } from "react-icons/si";
 
+import VocajectMock from "@/public/portfolio/vocaject-mock.png";
+
 const stackIcons: Record<string, {
     icon: IconType,
     color: string
@@ -63,7 +65,7 @@ const stackIcons: Record<string, {
 const projects = [
     {
         image: {
-            url: `/portfolio/vocaject-mock.png`,
+            url: VocajectMock,
             alt: `mock vocaject application`
         },
         title: 'Vocational Project (Vocaject)',
@@ -73,7 +75,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/arahku-mock.png`,
+            url: VocajectMock,
             alt: `mock arahku application`
         },
         title: 'Arahku',
@@ -83,7 +85,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/kopi-pas-mock.png`,
+            url: VocajectMock,
             alt: `mock kopi pas application`
         },
         title: 'Aplikasi Kopi Pas',
@@ -93,7 +95,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/web-policy-mock.png`,
+            url: VocajectMock,
             alt: `mock web policy`
         },
         title: 'Website Official UKM-POLICY',
@@ -129,6 +131,7 @@ export default function Workspace() {
                                     src={v.image.url}
                                     alt={v.image.alt}
                                     className="object-cover object-center"
+                                    placeholder="blur"
                                     fill />
                             </div>
                             <div className="py-3">
