@@ -38,7 +38,7 @@ export default function RootLayout({
             {children}
           </Suspense>
         </main>
-        <ProgressiveBlur height="6rem" position="bottom" />
+        {/* <ProgressiveBlur height="6rem" position="bottom" /> */}
         <Footer />
         <Analytics />
       </body>

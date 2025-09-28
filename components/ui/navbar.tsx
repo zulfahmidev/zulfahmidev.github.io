@@ -29,7 +29,7 @@ export default function Navbar() {
             <motion.div
                 animate={isScrolled ? { width: "fit-content", marginTop: "12px" } : { width: "100%", marginTop: "0px" }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className={`mx-auto h-16 flex items-center justify-between gap-8 bg-background/30 min-w-[90%] lg:min-w-fit px-5 lg:px-0 ${isScrolled ? 'rounded-full lg:px-10 backdrop-blur-md border border-foreground/10 shadow-xl' : 'container'}`}
+                className={`mx-auto h-16 flex items-center justify-between gap-8 bg-background/30 min-w-[90%] lg:min-w-fit px-5 lg:px-0 ${isScrolled ? 'rounded-full lg:px-10 backdrop-blur-md border border-foreground/10' : 'container'}`}
             >
                 <div className="h-8 w-8 relative">
                     <Image
