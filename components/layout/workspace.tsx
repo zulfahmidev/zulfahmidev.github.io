@@ -115,10 +115,10 @@ export default function Workspace() {
                         </div>
                         <p className="opacity-50">Here are some of my best projects and achievements.</p>
                     </div>
-                    <a href="" className="my-3 py-2 px-4 w-fit border-2 border-foreground rounded-full flex items-center gap-3 font-semibold">
+                    {/* <a href="" className="my-3 py-2 px-4 w-fit border-2 border-foreground rounded-full flex items-center gap-3 font-semibold">
                         <span>See All Project</span>
                         <FaArrowRight />
-                    </a>
+                    </a> */}
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 my-8 lg:p-5 gap-6">
 
