@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://zulfahmidev.com/assets/profile.png",
-        width: 1200,
-        height: 630,
+        width: 750,
+        height: 750,
         alt: "Zulfahmidev - Software Engineer",
       },
     ],
