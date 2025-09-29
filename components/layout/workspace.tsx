@@ -63,7 +63,7 @@ const stackIcons: Record<string, {
 const projects = [
     {
         image: {
-            url: `/portfolio/vocaject-mock.png`,
+            url: `/portfolio/vocaject-mock.jpeg`,
             alt: `mock vocaject application`
         },
         title: 'Vocational Project (Vocaject)',
@@ -73,7 +73,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/arahku-mock.png`,
+            url: `/portfolio/arahku-mock.jpeg`,
             alt: `mock arahku application`
         },
         title: 'Arahku',
@@ -83,7 +83,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/kopi-pas-mock.png`,
+            url: `/portfolio/kopi-pas-mock.jpeg`,
             alt: `mock kopi pas application`
         },
         title: 'Aplikasi Kopi Pas',
@@ -93,7 +93,7 @@ const projects = [
     },
     {
         image: {
-            url: `/portfolio/web-policy-mock.png`,
+            url: `/portfolio/web-policy-mock.jpeg`,
             alt: `mock web policy`
         },
         title: 'Website Official UKM-POLICY',
