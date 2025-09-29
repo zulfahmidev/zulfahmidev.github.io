@@ -7,6 +7,7 @@ import Footer from "@/components/layout/footer";
 // import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next"
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
 const suseMono = SUSE({
   variable: "--font-suse-mono",
@@ -116,7 +117,7 @@ export default function RootLayout({
             {children}
           </Suspense>
         </main>
-        {/* <ProgressiveBlur height="4rem" position="bottom" /> */}
+        <ProgressiveBlur height="6rem" position="bottom" />
         <Footer />
         <Analytics />
       </body>
