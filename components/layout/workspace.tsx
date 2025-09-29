@@ -144,7 +144,7 @@ export default function Workspace() {
                                             if (stackIcons[stack]) {
                                                 const Icon = stackIcons[stack].icon
                                                 return (
-                                                    <Icon key={i} className={`text-xl text-black/50`} />
+                                                    <Icon key={i} className={`text-xl text-foreground/50`} />
                                                 )
                                             }
                                             return null
