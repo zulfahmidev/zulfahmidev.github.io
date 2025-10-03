@@ -78,10 +78,10 @@ function ExperienceCard({data} : {data: Experience}) {
 
 export default function Experiences() {
     return (
-        <section className="py-8">
+        <section className="py-8" aria-labelledby="experiences-title">
             <div className="container mx-auto px-5 lg:px-0">
                 <header className="py-2 px-4 rounded-full border border-foreground/15 w-fit mx-auto">
-                    <h2 className="">Work Experiences</h2>
+                    <h2 id="experiences-title">Work Experiences</h2>
                 </header>
                 <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {

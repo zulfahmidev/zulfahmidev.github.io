@@ -5,7 +5,7 @@ export default function Education() {
         <section className="py-8" aria-labelledby="education-title">
             <div className="container mx-auto px-5 lg:px-0">
                 <header className="py-2 px-4 rounded-full border border-foreground/15 w-fit mx-auto">
-                    <h2 id="education-title" className="text-xl font-bold">Education</h2>
+                    <h2 id="education-title" className="text-xl">Education</h2>
                 </header>
                 <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div className="aspect-[16/9] w-full rounded-lg overflow-hidden relative">

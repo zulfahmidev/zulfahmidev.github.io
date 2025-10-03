@@ -3,10 +3,10 @@ import TechStack from "./tech-stack";
 
 export default function Skills() {
     return (
-        <section className="py-8">
+        <section className="py-8" aria-labelledby="skills-title">
             <div className="container mx-auto px-5 lg:px-0">
                 <div className="py-2 px-4 rounded-full border border-foreground/15 w-fit mx-auto">
-                    <h2 className="">Skills And Tools</h2>
+                    <h2 id="skills-title">Skills And Tools</h2>
                 </div>
                 <div className="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
 
