@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
@@ -19,13 +20,13 @@ export default function Footer() {
                         <a href="" className="opacity-50 hover:opacity-100">Home</a>
                     </li> */}
                     <li>
-                        <a href="#about" className="opacity-50 hover:opacity-100">About</a>
+                        <Link href="/#about" className="opacity-50 hover:opacity-100">About</Link>
                     </li>
                     <li>
-                        <a href="#portfolio" className="opacity-50 hover:opacity-100">Portfolio</a>
+                        <Link href="/#portfolio" className="opacity-50 hover:opacity-100">Portfolio</Link>
                     </li>
                     <li>
-                        <a href="#contact" className="opacity-50 hover:opacity-100">Contact</a>
+                        <Link href="/#contact" className="opacity-50 hover:opacity-100">Contact</Link>
                     </li>
                     {/* <li>
                         <a href="" className="opacity-50 hover:opacity-100">Apps</a>

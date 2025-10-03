@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
-import { FaArrowRight, FaLaravel } from "react-icons/fa";
+import { FaLaravel } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaFlutter } from "react-icons/fa6";

@@ -4,6 +4,7 @@ import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link } from "lucide-react";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -49,13 +50,13 @@ export default function Navbar() {
                             <a className="opacity-50 hover:opacity-100" href="">Home</a>
                         </li> */}
                         <li>
-                            <a className="opacity-50 hover:opacity-100" href="#about">About</a>
+                            <Link className="opacity-50 hover:opacity-100" href="/#about">About</Link>
                         </li>
                         <li>
-                            <a className="opacity-50 hover:opacity-100" href="#portfolio">Portfolio</a>
+                            <Link className="opacity-50 hover:opacity-100" href="/#portfolio">Portfolio</Link>
                         </li>
                         <li>
-                            <a className="opacity-50 hover:opacity-100" href="#contact">Contact</a>
+                            <Link className="opacity-50 hover:opacity-100" href="/#contact">Contact</Link>
                         </li>
                         {/* <li>
                             <a className="opacity-50 hover:opacity-100" href="">Apps</a>

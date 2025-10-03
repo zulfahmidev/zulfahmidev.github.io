@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { SUSE } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
-import { Header } from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-// import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next"
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
@@ -111,12 +108,7 @@ export default function RootLayout({
         `}
       >
         <Navbar />
-        <Header />
-        <main>
-          <Suspense fallback={<>Loading...</>}>
-            {children}
-          </Suspense>
-        </main>
+        {children}
         <ProgressiveBlur height="6rem" position="bottom" />
         <Footer />
         <Analytics />
