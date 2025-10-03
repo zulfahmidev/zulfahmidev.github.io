@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.zulfahmidev.com
+
+# Sitemaps
+Sitemap: https://www.zulfahmidev.com/sitemap.xml
