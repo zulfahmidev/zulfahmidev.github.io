@@ -4,7 +4,7 @@ import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);

@@ -20,7 +20,7 @@ export default function Footer() {
                         <a href="" className="opacity-50 hover:opacity-100">Home</a>
                     </li> */}
                     <li>
-                        <Link href="/#about" className="opacity-50 hover:opacity-100">About</Link>
+                        <Link href={`/#about`} className="opacity-50 hover:opacity-100">About</Link>
                     </li>
                     <li>
                         <Link href="/#portfolio" className="opacity-50 hover:opacity-100">Portfolio</Link>
