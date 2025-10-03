@@ -6,20 +6,8 @@ import Experiences from "./experiences";
 export const metadata = {
   title: "Profile",
   openGraph: {
-    type: "website",
     url: "https://zulfahmidev.com/profile",
     title: "Profile - Zulfahmidev",
-    description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces.",
-    siteName: "Zulfahmidev",
-    images: [
-      {
-        url: "https://zulfahmidev.com/assets/profile.jpeg",
-        width: 750,
-        height: 750,
-        alt: "Zulfahmidev - Software Engineer",
-      },
-    ],
-    locale: "id_ID",
   },
   other: {
     "script:ld+json": JSON.stringify({
