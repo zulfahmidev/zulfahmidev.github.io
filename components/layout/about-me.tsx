@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 export default function AboutMe({isAboutPage=false} : {isAboutPage?: boolean}) {
@@ -13,10 +14,10 @@ export default function AboutMe({isAboutPage=false} : {isAboutPage?: boolean}) {
                             <FaDownload />
                         </a>
                     ) : (
-                        <a href="/profile" className="py-2 px-4 border-2 border-foreground rounded-full flex items-center gap-3 font-semibold w-fit mx-auto">
+                        <Link href="/profile" className="py-2 px-4 border-2 border-foreground rounded-full flex items-center gap-3 font-semibold w-fit mx-auto">
                             <span>See My Profile</span>
                             <FaArrowRight />
-                        </a>
+                        </Link>
                     )
                 }
                 <div className="container mx-auto flex justify-center flex-wrap gap-6 px-5 lg:px-0 mt-8">

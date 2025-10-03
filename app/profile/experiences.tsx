@@ -43,26 +43,27 @@ const experiences: Experience[] = [
     {
         Company: 'CV. Naistudio',
         Location: 'Metro, Lampung',
-        Position: 'Full Stack Developer',
-        Estimate: 'Oct 2023 - Mar 2024',
+        Position: 'Student Trainee',
+        Estimate: 'Nov 2019 - Dec 2019',
         Description: [
-            'Developed the Zavis V oucher information system using Laravel and MySQL, and the HRIS information system using Next.js/React.js, Laravel, and MySQL',
-            'Performed several enhancements, including backend refactoring, layout improvements, and adding new components and pages to both the Zavis V oucher and HRIS information systems',
+            'Develop Flappy Bird and Go Chess games using JavaScript and applied object-oriented programming (OOP) concepts.',
+            'Develop a backend REST API for a ticketing information system using Laravel.',
+            'Develop the frontend of a ticketing information system website using Vue.js and how to consume the backend API.',
+            'Develop custom WordPress template using the Blankslate theme.',
+            'Completed several simple challenges such as creating a cube with CSS and HTML, manipulating images using PHP GD, building a countdown timer, and more.',
         ]
     },
 ]
 
 function ExperienceCard({data} : {data: Experience}) {
     return (
-        <div>
-            <h3 className="text-2xl">
-                <span className="font-semibold">{data.Company}</span>
-            </h3>
-            <p className="font-semibold">{data.Position}</p>
+        <article>
+            <h3 className="text-2xl font-semibold">{data.Company}</h3>
+            <h4 className="font-semibold">{data.Position}</h4>
             <div className="flex gap-3 items-center text-sm">
-                <p>{data.Location}</p>
+                <span>{data.Location}</span>
                 <div className="w-1 h-1 rounded-full bg-foreground"></div>
-                <p>{data.Estimate}</p>
+                <time dateTime={data.Estimate}>{data.Estimate}</time>
             </div>
             <ul className="list-disc px-6 text-sm text-foreground mt-3">
                 {
@@ -71,7 +72,7 @@ function ExperienceCard({data} : {data: Experience}) {
                     ))
                 }
             </ul>
-        </div>
+        </article>
     )
 }
 
@@ -79,9 +80,9 @@ export default function Experiences() {
     return (
         <section className="py-8">
             <div className="container mx-auto px-5 lg:px-0">
-                <div className="py-2 px-4 rounded-full border border-foreground/15 w-fit mx-auto">
+                <header className="py-2 px-4 rounded-full border border-foreground/15 w-fit mx-auto">
                     <h2 className="">Work Experiences</h2>
-                </div>
+                </header>
                 <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {
                         experiences.map((v, i) => (
