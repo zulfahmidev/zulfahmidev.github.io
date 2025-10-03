@@ -19,7 +19,7 @@ export default function ContactMe() {
                         <div className="w-21 h-21 relative rounded-full mx-auto">
                             <Image 
                                 className="rounded-full"
-                                src={'/assets/profile.png'}
+                                src={'/assets/profile.jpeg'}
                                 alt=""
                                 fill />
 

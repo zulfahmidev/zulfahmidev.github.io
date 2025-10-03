@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Zulfahmidev",
     images: [
       {
-        url: "https://zulfahmidev.com/assets/profile.png",
+        url: "https://zulfahmidev.com/assets/profile.jpeg",
         width: 750,
         height: 750,
         alt: "Zulfahmidev - Software Engineer",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     description: "Hi, I'm Zulfahmi, A Software Engineer with over 5 years of experience in creating high-quality and impactful digital experiences. I have a strong focus on transforming complex problems into elegant and user-friendly interfaces.",
     site: "@zulfahmidev",
     creator: "@zulfahmidev",
-    images: ["https://zulfahmidev.com/assets/profile.png"],
+    images: ["https://zulfahmidev.com/assets/profile.jpeg"],
   },
 
   // Icons (favicon, apple-touch-icon, dll.)
