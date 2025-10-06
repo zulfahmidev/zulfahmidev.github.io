@@ -262,7 +262,7 @@ export default function Workspace({showAll = false} : {showAll?: boolean}) {
                         <div className="text-5xl font-bold my-2">
                             <AnimatedShinyText>Selected Projects</AnimatedShinyText>
                         </div>
-                        <p className="opacity-50">Here's a curated selection showcasing my expertise and the achieved results.</p>
+                        <p className="opacity-50">{`Here's a curated selection showcasing my expertise and the achieved results.`}</p>
                     </div>
                     {
                         !showAll ? (
