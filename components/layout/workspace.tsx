@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { FaArrowRight, FaLaravel } from "react-icons/fa";
@@ -89,118 +91,8 @@ const stackIcons: Record<string, {
     },
 }
 
-const projects = [
-    {
-        image: undefined,
-        title: 'Localoka',
-        position: `As a Backend Developer`,
-        estimate: {
-            start: '2024-10',
-            end: '2025-10'
-        },
-        stacks: ['flask', 'postgre', 'golang', 'rabbit', 'redis', 'docker', 'next', 'flutter']
-    },
-    {
-        image: undefined,
-        title: 'Zainab Voucher',
-        position: `As a Fullstack Developer`,
-        estimate: {
-            start: '2023-10',
-            end: '2024-01'
-        },
-        stacks: ['laravel', 'jquery', 'bootstrap', 'mysql']
-    },
-    {
-        image: undefined,
-        title: 'HRIS',
-        position: `As a Frontend Developer`,
-        estimate: {
-            start: '2024-01',
-            end: '2024-03'
-        },
-        stacks: ['laravel', 'mysql', 'next', 'tailwind']
-    },
-    {
-        image: {
-            url: `/portfolio/vocaject-mock.jpeg`,
-            alt: `mock vocaject application`
-        },
-        title: 'Wiraku',
-        position: `As a Fullstack Developer`,
-        estimate: {
-            start: '2021-06',
-            end: '2021-08'
-        },
-        stacks: ['laravel', 'nuxt', 'tailwind', 'flutter', 'mysql', 'pusher', 'gcp']
-    },
-    {
-        image: {
-            url: `/portfolio/vocaject-mock.jpeg`,
-            alt: `mock vocaject application`
-        },
-        title: 'Vocational Project (Vocaject)',
-        position: `As a Fullstack Developer`,
-        estimate: {
-            start: '2023-06',
-            end: '2023-08'
-        },
-        stacks: ['laravel', 'nuxt', 'tailwind', 'flutter', 'mysql', 'pusher', 'gcp']
-    },
-    {
-        image: {
-            url: `/portfolio/arahku-mock.jpeg`,
-            alt: `mock arahku application`
-        },
-        title: 'Arahku',
-        estimate: {
-            start: '2023-05',
-            end: '2023-06'
-        },
-        position: `As a Backend Developer`,
-        stacks: ['flask', 'kotlin', 'postgre', 'tensorflow', 'gcp']
-    },
-    {
-        image: {
-            url: `/portfolio/kopi-pas-mock.jpeg`,
-            alt: `mock kopi pas application`
-        },
-        title: 'Aplikasi Kopi Pas',
-        estimate: {
-            start: '2022-10',
-            end: '2022-12'
-        },
-        position: `As a Backend Developer`,
-        stacks: ['laravel', 'tailwind', 'flutter', 'vue', 'mysql']
-    },
-    {
-        image: {
-            url: `/portfolio/web-policy-mock.jpeg`,
-            alt: `mock web policy`
-        },
-        title: 'Website Official UKM-POLICY',
-        estimate: {
-            start: '2021-09',
-            end: '2021-11'
-        },
-        position: `As a Backend Developer`,
-        stacks: ['laravel', 'tailwind', 'mysql']
-    },
-]
-
 function CardProject({data}: {
-    data: {
-        image?: {
-            url: string,
-            alt: string,
-        },
-        title: string,
-        estimate: {
-            start: string,
-            end: string
-        },
-        position: string,
-        stacks: string[]
-    }
+    data: Project
 }) {
 
     function formatDate(d: Date) {
@@ -211,50 +103,56 @@ function CardProject({data}: {
     }
 
     return (
-        <article className="col-span-1">
-            <div className="aspect-[16/9] bg-slate-100 w-full rounded-xl relative overflow-hidden border">
-                <Image
-                    src={data.image?.url ?? '/assets/project.png'}
-                    alt={data.image?.alt ?? data.title}
-                    className="object-cover object-center"
-                    fill />
-            </div>
-            <div className="py-3">
-                <h3 className="font-semibold text-xl">{data.title}</h3>
-                <div className="opacity-50 flex items-center gap-3 mt-1">
-                    <p>{data.position}</p>
-                    <div className="w-1 h-1 rounded-full bg-foreground"></div>
-                    <div className="">
-                        <time dateTime="Y-m">
-                            {formatDate(new Date(data.estimate.start + '-01'))}
-                        </time>
-                        <span className="px-1">-</span> 
-                        <time dateTime="Y-m">
-                            {formatDate(new Date(data.estimate.end + '-01'))}
-                        </time>
+        <Link href={`/portfolio/${data.slug}`}>
+            <article className="col-span-1 group">
+                <div className="aspect-[16/9] bg-slate-100 w-full rounded-xl relative overflow-hidden border border-foreground/1">
+                    <Image
+                        src={data.image?.url ?? '/assets/project.png'}
+                        alt={data.image?.alt ?? data.title}
+                        className="object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:rotate-3"
+                        fill />
+                </div>
+                <div className="py-3">
+                    <h3 className="font-semibold text-xl">{data.title}</h3>
+                    <div className="opacity-50 flex items-center gap-3 mt-1">
+                        <p>{data.position}</p>
+                        <div className="w-1 h-1 rounded-full bg-foreground"></div>
+                        <div className="">
+                            <time dateTime="Y-m">
+                                {formatDate(new Date(data.estimate.start + '-01'))}
+                            </time>
+                            <span className="px-1">-</span> 
+                            <time dateTime="Y-m">
+                                {formatDate(new Date(data.estimate.end + '-01'))}
+                            </time>
+                        </div>
+                    </div>
+                    <div className="flex gap-3 items-center mt-2">
+                        {
+                            data.stacks.map((stack, i) => {
+                                if (stackIcons[stack]) {
+                                    const Icon = stackIcons[stack].icon
+                                    return (
+                                        <Icon key={i} className={`text-xl text-foreground/50`} />
+                                    )
+                                }
+                                return null
+                            })
+                        }
                     </div>
                 </div>
-                <div className="flex gap-3 items-center mt-2">
-                    {
-                        data.stacks.map((stack, i) => {
-                            if (stackIcons[stack]) {
-                                const Icon = stackIcons[stack].icon
-                                return (
-                                    <Icon key={i} className={`text-xl text-foreground/50`} />
-                                )
-                            }
-                            return null
-                        })
-                    }
-                </div>
-            </div>
-        </article>
+            </article>
+        </Link>
     )
 }
 
-export default function Workspace({showAll = false} : {showAll?: boolean}) {
+export default function Workspace({showAll = false, projects = []} : {
+    showAll?: boolean,
+    projects: Project[]
+}) {
+
     return (
-        <section className="py-16" id="portfolio">
+        <section className="py-16">
             <div className="container mx-auto px-5 lg:px-0">
                 <div className="lg:flex justify-between items-center">
                     <div className="">

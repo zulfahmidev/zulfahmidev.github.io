@@ -1,0 +1,105 @@
+
+[
+    {
+        "image": null,
+        "title": "Localoka",
+        "slug": "localoka",
+        "position": "As a Backend Developer",
+        "estimate": {
+            "start": "2024-10",
+            "end": "2025-10"
+        },
+        "stacks": ["flask", "postgre", "golang", "rabbit", "redis", "docker", "next", "flutter"]
+    },
+    {
+        "image": null,
+        "title": "Zainab Voucher",
+        "slug": "zainab-voucher",
+        "position": "As a Fullstack Developer",
+        "estimate": {
+            "start": "2023-10",
+            "end": "2024-01"
+        },
+        "stacks": ["laravel", "jquery", "bootstrap", "mysql"]
+    },
+    {
+        "image": null,
+        "title": "HRIS",
+        "slug": "hris",
+        "position": "As a Frontend Developer",
+        "estimate": {
+            "start": "2024-01",
+            "end": "2024-03"
+        },
+        "stacks": ["laravel", "mysql", "next", "tailwind"]
+    },
+    {
+        "image": {
+            "url": "/portfolio/vocaject-mock.jpeg",
+            "alt": "mock vocaject application"
+        },
+        "title": "Wiraku",
+        "slug": "wiraku",
+        "position": "As a Fullstack Developer",
+        "estimate": {
+            "start": "2021-06",
+            "end": "2021-08"
+        },
+        "stacks": ["laravel", "nuxt", "tailwind", "flutter", "mysql", "pusher", "gcp"]
+    },
+    {
+        "image": {
+            "url": "/portfolio/vocaject-mock.jpeg",
+            "alt": "mock vocaject application"
+        },
+        "title": "Vocational Project (Vocaject)",
+        "slug": "vocational-project",
+        "position": "As a Fullstack Developer",
+        "estimate": {
+            "start": "2023-06",
+            "end": "2023-08"
+        },
+        "stacks": ["laravel", "nuxt", "tailwind", "flutter", "mysql", "pusher", "gcp"]
+    },
+    {
+        "image": {
+            "url": "/portfolio/arahku-mock.jpeg",
+            "alt": "mock arahku application"
+        },
+        "title": "Arahku",
+        "estimate": {
+            "start": "2023-05",
+            "end": "2023-06"
+        },
+        "position": "As a Backend Developer",
+        "stacks": ["flask", "kotlin", "postgre", "tensorflow", "gcp"]
+    },
+    {
+        "image": {
+            "url": "/portfolio/kopi-pas-mock.jpeg",
+            "alt": "mock kopi pas application"
+        },
+        "title": "Aplikasi Kopi Pas",
+        "slug": "aplikasi-kopi-pas",
+        "estimate": {
+            "start": "2022-10",
+            "end": "2022-12"
+        },
+        "position": "As a Backend Developer",
+        "stacks": ["laravel", "tailwind", "flutter", "vue", "mysql"]
+    },
+    {
+        "image": {
+            "url": "/portfolio/web-policy-mock.jpeg",
+            "alt": "mock web policy"
+        },
+        "title": "Website Official UKM-POLICY",
+        "slug": "website-official-ukm-policy",
+        "estimate": {
+            "start": "2021-09",
+            "end": "2021-11"
+        },
+        "position": "As a Backend Developer",
+        "stacks": ["laravel", "tailwind", "mysql"]
+    }
+]
