@@ -19,7 +19,7 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
       const root = document.documentElement
       const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
 
-      let effectiveDark =
+      const effectiveDark =
         newTheme === "dark" || (newTheme === "system" && systemPrefersDark)
 
       root.classList.toggle("dark", effectiveDark)
@@ -76,7 +76,7 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
         pseudoElement: "::view-transition-new(root)",
       }
     )
-  }, [theme, applyTheme])
+  }, [themes, theme, applyTheme])
 
   const getIcon = () => {
     switch (theme) {
