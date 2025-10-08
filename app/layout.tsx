@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Analytics } from "@vercel/analytics/next"
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import { Providers } from "./theme-provider";
 
 const suseMono = SUSE({
   variable: "--font-suse-mono",
@@ -101,17 +102,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`
           ${suseMono.variable} antialiased font-suse relative
         `}
       >
-        <Navbar />
-        {children}
-        <ProgressiveBlur height="6rem" position="bottom" />
-        <Footer />
-        <Analytics />
+        <Providers>
+          <Navbar />
+          {children}
+          <ProgressiveBlur height="6rem" position="bottom" />
+          <Footer />
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );
