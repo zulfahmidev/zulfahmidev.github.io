@@ -118,7 +118,7 @@ export default async function PortfolioDetail({ params } : Props) {
                     {/* Title & Date */}
                     <div className="mt-8">
                         <h1 
-                            className="text-5xl font-bold my-2" 
+                            className="text-3xl font-bold my-2" 
                             itemProp="headline"
                         >
                             {data?.title}
