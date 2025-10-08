@@ -1,11 +1,11 @@
-import Workspace from "@/components/layout/workspace";
+import Projects from "@/components/layout/projects";
 import { ReadData } from "@/lib/helper";
 
 export default async function PortfolioPage() {
     const projects = await ReadData('projects.json')
     return (
         <>
-            <Workspace showAll={true} projects={projects} />
+            <Projects showAll={true} projects={projects} />
         </>
     )
 }

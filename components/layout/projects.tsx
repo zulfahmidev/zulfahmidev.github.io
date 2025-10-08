@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import CardProject from "./card-project";
 
-export default function Workspace({showAll = false, projects = []} : {
+export default function Projects({showAll = false, projects = []} : {
     showAll?: boolean,
     projects: Project[]
 }) {
@@ -16,10 +16,10 @@ export default function Workspace({showAll = false, projects = []} : {
             <div className="container mx-auto px-5 lg:px-0">
                 <div className="lg:flex justify-between items-center">
                     <div className="">
-                        <h2 className="text-primary text-xl">Portfolio</h2>
-                        <h2 className="text-5xl font-bold my-2">
-                            <AnimatedShinyText>Selected Projects</AnimatedShinyText>
-                        </h2>
+                        <h1 className="text-primary text-xl">Portfolio</h1>
+                        <div className="text-5xl font-bold my-2">
+                            <AnimatedShinyText>All Projects</AnimatedShinyText>
+                        </div>
                         <p className="opacity-50">{`Here's a curated selection showcasing my expertise and the achieved results.`}</p>
                     </div>
                     {

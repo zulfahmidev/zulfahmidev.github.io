@@ -12,7 +12,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const projects = await ReadData("projects.json");
-  const project = projects.find((p: Project) => p.slug === params.slug);
+  const project = await projects.find((p: Project) => p.slug === params.slug);
 
   if (!project) {
     return {
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function PortfolioDetail({ params } : Props) {
     const projects = (await ReadData('projects.json')) as Project[]
-    const data: Project | undefined = projects.find(v => v.slug === params.slug)
+    const data: Project | undefined = await projects.find(v => v.slug === params.slug)
 
     function formatDate(d: Date) {
         return d.toLocaleDateString("en-US", {
