@@ -1,7 +1,10 @@
 
 [
     {
-        "image": null,
+        "image": {
+            "url": "/portfolio/localoka-mock.jpeg",
+            "alt": "localoka"
+        },
         "title": "Localoka",
         "slug": "localoka",
         "position": "As a Backend Developer",
@@ -12,9 +15,12 @@
         "stacks": ["flask", "postgre", "golang", "rabbit", "redis", "docker", "next", "flutter"]
     },
     {
-        "image": null,
-        "title": "Zainab Voucher",
-        "slug": "zainab-voucher",
+        "image": {
+            "url": "/portfolio/zavis-voucher-mock.jpeg",
+            "alt": "zavis voucher"
+        },
+        "title": "Zavis Voucher",
+        "slug": "zavis-voucher",
         "position": "As a Fullstack Developer",
         "estimate": {
             "start": "2023-10",
