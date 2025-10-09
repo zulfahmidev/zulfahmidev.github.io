@@ -5,6 +5,7 @@
             "url": "/portfolio/localoka-mock.jpeg",
             "alt": "localoka"
         },
+        "isSelected": true,
         "title": "Localoka",
         "slug": "localoka",
         "position": "As a Backend Developer",
@@ -19,6 +20,7 @@
             "url": "/portfolio/zavis-voucher-mock.jpeg",
             "alt": "zavis voucher"
         },
+        "isSelected": true,
         "title": "Zavis Voucher",
         "slug": "zavis-voucher",
         "position": "As a Fullstack Developer",
@@ -30,6 +32,7 @@
     },
     {
         "image": null,
+        "isSelected": false,
         "title": "HRIS",
         "slug": "hris",
         "position": "As a Frontend Developer",
@@ -44,6 +47,7 @@
             "url": "/portfolio/vocaject-mock.jpeg",
             "alt": "mock vocaject application"
         },
+        "isSelected": false,
         "title": "Wiraku",
         "slug": "wiraku",
         "position": "As a Fullstack Developer",
@@ -58,6 +62,7 @@
             "url": "/portfolio/vocaject-mock.jpeg",
             "alt": "mock vocaject application"
         },
+        "isSelected": true,
         "title": "Vocational Project (Vocaject)",
         "slug": "vocational-project",
         "position": "As a Fullstack Developer",
@@ -72,6 +77,7 @@
             "url": "/portfolio/arahku-mock.jpeg",
             "alt": "mock arahku application"
         },
+        "isSelected": true,
         "title": "Arahku",
         "estimate": {
             "start": "2023-05",
@@ -85,6 +91,7 @@
             "url": "/portfolio/kopi-pas-mock.jpeg",
             "alt": "mock kopi pas application"
         },
+        "isSelected": false,
         "title": "Aplikasi Kopi Pas",
         "slug": "aplikasi-kopi-pas",
         "estimate": {
@@ -99,6 +106,7 @@
             "url": "/portfolio/web-policy-mock.jpeg",
             "alt": "mock web policy"
         },
+        "isSelected": false,
         "title": "Website Official UKM-POLICY",
         "slug": "website-official-ukm-policy",
         "estimate": {

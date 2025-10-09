@@ -3,6 +3,7 @@ interface Project {
         url: string,
         alt: string,
     },
+    isSelected: boolean,
     title: string,
     slug: string,
     brief: string,
